@@ -1,0 +1,85 @@
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+}
+
+.dashboard {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+
+.cardHeading1 {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;  
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.selectList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Large Tablets and Small Laptops */
+@media (max-width: 1024px) {
+    .dashboard {
+        width: 80%; /* Adjust width to a percentage for responsiveness */
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .dashboard {
+        width: 90%; /* Adjust width to a percentage for responsiveness */
+    }
+}
+
+/* Small Tablets and Large Mobile Phones */
+@media (max-width: 600px) {
+    .dashboard {
+        width: 95%; /* Adjust width to a percentage for responsiveness */
+    }
+    .cardHeading1 {
+        padding: 10px 0px; /* Slightly reduce padding */
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 480px) {
+    .dashboard {
+        width: 100%; /* Adjust width to a percentage for responsiveness */
+    }
+    .cardHeading1 {
+        padding: 5px 0px; /* Further reduce padding */
+    }
+    .image {
+        width: 10px; /* Reduce image size */
+        height: 10px;
+    }
+}
